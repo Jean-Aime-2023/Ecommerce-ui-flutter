@@ -21,6 +21,7 @@ class IntroPage extends StatelessWidget {
               child: Image.asset(
                 'lib/images/logo.png',
                 height: 240,
+                color: Colors.grey[900],
               ),
             ),
 
@@ -52,7 +53,7 @@ class IntroPage extends StatelessWidget {
             //start now button
             GestureDetector(
               onTap: () => Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => HomePage())),
+                  context, MaterialPageRoute(builder: (context) => const HomePage())),
               child: Container(
                 decoration: BoxDecoration(
                     color: Colors.grey[900],
